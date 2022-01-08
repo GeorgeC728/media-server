@@ -15,7 +15,9 @@
     "provisioners": [
         {
             "type": "shell",
-            "script": "{{template_dir}}/../scripts/install_packages.sh",
+            "scripts": [
+                "{{template_dir}}/../scripts/install_packages.sh",
+                "{{template_dir}}/../scripts/start_containers.sh"],
             "execute_command": "sudo {{.Path}}"
         }
     ]
