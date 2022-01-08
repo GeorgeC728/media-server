@@ -2,11 +2,11 @@
     "builders": [
         {
             "type": "googlecompute",
-            "project_id": "server-hosting-303517",
+            "project_id": "george-cloud-334811",
             "zone": "europe-west2-c",
             "machine_type": "e2-standard-2",
             "source_image_family": "ubuntu-2004-lts",
-            "image_name": "media-stations-{{isotime `20060102-150405`}}",
+            "image_name": "media-station-{{isotime `20060102-150405`}}",
             "image_family": "media-station",
             "image_description": "VM with tools to run a media server such as docker",
             "ssh_username": "developer"
